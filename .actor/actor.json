@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "contact-scraper-latam",
+  "title": "Contact Scraper LATAM",
+  "description": "Recibe un CSV con nombre de empresa + país, busca el sitio web y extrae datos de contacto.",
+  "version": "1.0.0",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile"
+}
