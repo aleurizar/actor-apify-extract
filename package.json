@@ -1,0 +1,18 @@
+{
+  "name": "contact-scraper-latam",
+  "version": "1.0.0",
+  "description": "Extrae datos de contacto de sitios web de empresas a partir de nombre + país",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.1.0",
+    "crawlee": "^3.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "csv-parse": "^5.5.0"
+  },
+  "author": "Alejandro",
+  "license": "ISC"
+}
