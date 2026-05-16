@@ -1,0 +1,39 @@
+{
+  "title": "Contact Scraper LATAM - Input",
+  "description": "Configuración del scraper de contactos",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "csvUrl": {
+      "title": "URL del CSV",
+      "type": "string",
+      "description": "URL pública del CSV con columnas 'empresa' y 'pais'.",
+      "editor": "textfield"
+    },
+    "csvFile": {
+      "title": "CSV directo (pegar contenido)",
+      "type": "string",
+      "description": "Pegá el contenido CSV acá. Columnas: empresa,pais",
+      "editor": "textarea",
+      "prefill": "empresa,pais\nGlobant,Argentina\nDespegar,Argentina\nRappi,Colombia"
+    },
+    "maxPagesPerSite": {
+      "title": "Máx. páginas por sitio",
+      "type": "integer",
+      "description": "Cuántas páginas internas crawlear por sitio",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 15
+    },
+    "proxyConfig": {
+      "title": "Configuración de proxy",
+      "type": "object",
+      "description": "Proxy para las búsquedas y el scraping",
+      "editor": "proxy",
+      "default": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": ["RESIDENTIAL"]
+      }
+    }
+  }
+}
